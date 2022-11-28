@@ -22,12 +22,15 @@
         /><br />
         <h3><b>VARRUS</b></h3>
         <div class="social-icons w3-panel w3-large">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
+            {% comment %} <i class="fa fa-facebook-official w3-hover-opacity"></i> {% endcomment %}
+            {% comment %} <i class="fa fa-instagram w3-hover-opacity"></i> {% endcomment %}
+            <a href="linkedin.com/in/javarrus-mickle-b602ab9b/" target="_">
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </a>
+            {% comment %} <i class="fa fa-twitter w3-hover-opacity"></i> {% endcomment %}
+            <a href="https://github.com/JavarrusM" target="_">
+                <i class="fa fa-github-square w3-hover-opacity"></i>
+            </a>
         </div>
     </div>
 
@@ -48,7 +51,7 @@
             href="{% url 'blog:all_blogs' %}"
             onclick="w3_close()"
             class="w3-bar-item w3-button w3-padding"
-            ><i class="fa fa-user fa-fw w3-margin-right"></i>BLOG</a
+            ><i class="fa fa-newspaper-o fa-fw w3-margin-right"></i>BLOG</a
         >
         <a
             href="/#contact"
@@ -57,10 +60,11 @@
             ><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a
         >
         <a
-            href="{% static 'portfolio/Final Resume NOV.docx.pdf' %}"
+            href="{% static 'portfolio/resume/Final Resume NOV.docx.pdf' %}"
+            target="_"
             onclick="w3_close()"
             class="w3-bar-item w3-button w3-padding"
-            ><i class="fa fa-user fa-fw w3-margin-right"></i>RESUME</a
+            ><i class="fa fa-link w3-margin-right"></i>RESUME</a
         >
     </div>
 </nav>
