@@ -169,17 +169,26 @@ div#about-me p {
     font-size: 1.5rem;
 }
 
-a.project-container:link { text-decoration: none; }
-a.project-container:visited { text-decoration: none; }
-a.project-container:hover { text-decoration: none; }
-a.project-container:active { text-decoration: none; }
+a.project-container:link,
+a.project-container:visited,
+a.project-container:hover,
+a.project-container:active {
+    text-decoration: none;
+}
+
+a.resume:link,
+a.resume:visited,
+a.resume:hover,
+a.resume:active {
+    text-decoration: none;
+}
 
 div#filter {
     color: white;
 }
 
 .button-filter {
-    cursor: not-allowed !important; 
+    cursor: not-allowed !important;
 }
 
 .portfolio-grid {
@@ -311,5 +320,35 @@ div.contact {
     div#about-me {
         padding: 0 10%;
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    div#about-me p {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 15% 7%;
+        font-size: 1.25rem;
+        background-color: black;
+        opacity: 0.75;
+    }
+
+    .portfolio-grid {
+        flex-direction: column;
+    }
+
+    .resume {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.contact {
+        width: 100%;
+    }
+
+    nav.nav-title {
+        justify-content: space-between;
     }
 }
