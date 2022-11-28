@@ -268,7 +268,7 @@ footer {
 nav.nav-title {
     right: 0;
     color: black;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 nav#mySidebar {
