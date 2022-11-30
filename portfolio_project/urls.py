@@ -25,7 +25,8 @@ urlpatterns = [
     path('blog/', include('blog.urls')),
 
 
-    path('generator/', include('generator.urls'))
+    path('generator/', include('generator.urls')),
+    path('tmdb_movie_barchart/', include('tmdb_movie_barchart.urls'))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
