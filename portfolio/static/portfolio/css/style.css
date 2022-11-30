@@ -196,6 +196,7 @@ div#filter {
     justify-content: space-evenly;
     padding: 5%;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .project-container {
@@ -203,7 +204,7 @@ div#filter {
     border-radius: 0px;
     padding: 0;
     height: fit-content;
-    flex: 0.5;
+    flex: 1 0 40%;
 }
 
 .project-container:hover {
