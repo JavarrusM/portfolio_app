@@ -192,7 +192,8 @@ div#filter {
 }
 
 .portfolio-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-evenly;
     padding: 5%;
     gap: 3rem;
@@ -200,6 +201,7 @@ div#filter {
 }
 
 .project-container {
+    width: 100%;
     box-shadow: 0px 0px 10px 2px white;
     border-radius: 0px;
     padding: 0;
