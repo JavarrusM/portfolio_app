@@ -42,7 +42,6 @@
 
         <!-- !PAGE CONTENT! -->
         {% include "portfolio/include/base/nav.html" %}
-       
 
         {% block content %}{% endblock content %}
 
@@ -65,7 +64,7 @@
 
             document.addEventListener("scroll", (e) => {
                 const navTitle = document.querySelector(".portfolio-title");
-                navTitle.style.opacity = `${100 - window.scrollY}`;
+                navTitle.style.opacity = `${(100 - window.scrollY * .5)/ 100}`;
             });
         </script>
     </body>

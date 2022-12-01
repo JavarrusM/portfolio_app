@@ -7,7 +7,7 @@
 />
 <div class="container text-center">
     <h1>Password Generator</h1>
-    <form action="{% url 'generator:generator_password' %}">
+    <form action="{% url 'project:generator:generator_password' %}">
         <select name="length">
             <option value="6">6</option>
             <option value="7">7</option>
@@ -34,5 +34,5 @@
             value="Generate Password"
         />
     </form>
-    <a class="btn btn-secondary" href="{% url 'generator:generator_about' %}">About</a>
+    <a class="btn btn-secondary" href="{% url 'project:generator:generator_about' %}">About</a>
 </div>

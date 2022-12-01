@@ -19,12 +19,9 @@ from django.conf.urls.static import static
 from django.conf import settings
 from portfolio import views as portfolio_views
 
+app_name = 'project'
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', portfolio_views.home, name='home'),
-    path('blog/', include('blog.urls')),
-
-    path('project/', include('project.urls')),
+    path('generator/', include('generator.urls')),
+    path('tmdb_movie_barchart/', include('tmdb_movie_barchart.urls'))
 ]
-
-urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
