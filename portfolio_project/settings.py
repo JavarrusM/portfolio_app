@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'blog',
     'portfolio',
     'generator',
-    'tmdb_movie_barchart'
+    'tmdb_movie_barchart',
+    'analysis'
 ]
 
 MIDDLEWARE = [
