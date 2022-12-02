@@ -328,6 +328,18 @@ div.contact {
   div#about-me p {
     font-size: 1.25rem;
   }
+
+  /* ANALYSIS START */
+  span.sub-title,
+  span.title {
+    width: 100% !important;
+  }
+
+  div.analysis-grid {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+  /* ANALYSIS END */
 }
 
 /* ANALYSIS START */
@@ -347,6 +359,11 @@ span.title {
 
 span.sub-title {
   font-size: 1rem;
+}
+
+h5.date {
+  font-weight: bold;
+  text-align: center;
 }
 
 div.analysis-grid {
@@ -410,4 +427,11 @@ a.analysis:active {
   nav.nav-title {
     justify-content: space-between;
   }
+
+  /* ANALYSIS START */
+  div.analysis-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  /* ANALYSIS END */
 }

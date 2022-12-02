@@ -13,7 +13,7 @@
         {% for analysis in analyses %}
             <a class="analysis w3-third w3-container w3-margin-bottom project-container" href="{% url 'analysis:detail' analysis.id %}">
                 <img src="{{ analysis.image.url }}" alt="{{ analysis.title }}" />
-                <h5>{{ analysis.date | date:'F d Y' | upper }}</h5>
+                <h5 class="date">{{ analysis.date | date:'F d Y' | upper }}</h5>
                 <p>{{ analysis.description | truncatechars:100 }}</p>
             </a>
         {% endfor analyses %}
